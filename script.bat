@@ -11,17 +11,16 @@ set passwrd=123
 
 if not (%1)==() goto parameters
 
-
 FOR /F "tokens=*" %%i IN (%file%) DO call :vytvoreni %%i %passwrd%
 
 :vytvoreni
 net user %1 /fullname:"%1 %2" %3 /add
 
-goto konec
+goto END
 
 :napoveda
 echo help:
 echo -file --cesta k souboru
 echo -pswd --heslo k uctu
 
-:konec
+:END
