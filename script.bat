@@ -1,6 +1,6 @@
 @echo off
 
-set file=
+set file=User_list.txt
 set passwrd=123
 
 :parameters
