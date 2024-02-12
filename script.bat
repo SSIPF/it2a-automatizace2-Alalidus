@@ -24,3 +24,6 @@ echo -file --cesta k souboru
 echo -pswd --heslo k uctu
 
 :END
+
+:: net localgroup group_name UserLoginName /add
+:: net localgroup administrators name /add
